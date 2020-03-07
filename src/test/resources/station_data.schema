@@ -1,0 +1,10 @@
+message spark_schema {
+  optional int32 station_id;
+  optional binary name (UTF8);
+  optional double lat;
+  optional double long;
+  optional int32 dockcount;
+  optional binary landmark (UTF8);
+  optional binary installation (UTF8);
+}
+

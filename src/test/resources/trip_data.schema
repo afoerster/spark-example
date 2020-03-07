@@ -1,0 +1,13 @@
+message spark_schema {
+  optional binary trip_id (UTF8);
+  optional int32 duration;
+  optional binary start_date (UTF8);
+  optional binary start_station (UTF8);
+  optional int32 start_terminal;
+  optional binary end_date (UTF8);
+  optional binary end_station (UTF8);
+  optional int32 end_terminal;
+  optional int32 bike_number;
+  optional binary subscriber_type (UTF8);
+}
+
