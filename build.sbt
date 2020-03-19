@@ -5,7 +5,7 @@ ThisBuild / organizationName := "example"
 
 val sparkVersion = "2.4.1"
 
-lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.0.8"
+lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.1.1"
 lazy val sparkCore = "org.apache.spark" %% "spark-core" % sparkVersion
 lazy val sparkSql = "org.apache.spark" %% "spark-sql" % sparkVersion
 
