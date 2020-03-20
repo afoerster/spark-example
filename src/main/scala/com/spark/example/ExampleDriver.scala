@@ -10,7 +10,7 @@ object ExampleDriver {
       SparkSession.builder().appName("Testing Example").getOrCreate()
 
     val data = readData(distributedSparkSession, "data/201508_trip_data.csv")
-    val result = process(distributedSparkSession, data)
+    val result = doubleTripCount(distributedSparkSession, data)
     result.write.parquet("/target/testing-example-data")
   }
 
@@ -24,7 +24,7 @@ object ExampleDriver {
     stationData
   }
 
-  def process(sparkSession: SparkSession, data: DataFrame): DataFrame = {
+  def doubleTripCount(sparkSession: SparkSession, data: DataFrame): DataFrame = {
     data.select(
       col("end_terminal"),
       col("start_date"),
@@ -38,5 +38,9 @@ object ExampleDriver {
       col("start_station"),
       col("zip_code")
     )
+  }
+
+  def aggregateDuration(sparkSession: SparkSession, data: DataFrame): Long = {
+    data.agg(sum("duration")).first.get(0).asInstanceOf[Long]
   }
 }

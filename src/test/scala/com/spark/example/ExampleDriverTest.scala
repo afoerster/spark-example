@@ -21,9 +21,9 @@ class ExampleDriverTest extends FunSuite {
 
   test("Multiplies dock count by 2") {
     val tripData = ExampleDriver.readData(spark, "data/201508_trip_data.csv")
-    val doubledCount = ExampleDriver.process(spark, tripData)
-    val originalDockCount = tripData.agg(sum("duration")).first.get(0).asInstanceOf[Long]
-    val doubledDockCount = doubledCount.agg(sum("duration")).first.get(0).asInstanceOf[Long]
+    val doubledCount = ExampleDriver.doubleTripCount(spark, tripData)
+    val originalDockCount = ExampleDriver.aggregateDuration(spark, tripData)
+    val doubledDockCount = ExampleDriver.aggregateDuration(spark, doubledCount)
     assert(originalDockCount * 2 == doubledDockCount )
   }
 
