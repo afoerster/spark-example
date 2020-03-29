@@ -82,3 +82,8 @@ The worksheet `src/test/scala/com/spark/example/playground.sc` is a good place t
 to the left pane of the worksheet, click the 'play' button, and the result will display in the right pane.
 
 Note: The worksheet will not work for Spark code.
+
+## Documentation
+
+* RDD: https://spark.apache.org/docs/latest/rdd-programming-guide.html
+* Batch Structured APIs: https://spark.apache.org/docs/latest/sql-programming-guide.html
