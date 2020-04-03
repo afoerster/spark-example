@@ -1,4 +1,4 @@
-station_id,name,lat,long,dockcount,landmark,installation
+station_id,name,lat,lon,dockcount,landmark,installation
 2,San Jose Diridon Caltrain Station,37.329732,-121.901782,27,San Jose,8/6/2013
 3,San Jose Civic Center,37.330698,-121.888979,15,San Jose,8/5/2013
 4,Santa Clara at Almaden,37.333988,-121.894902,11,San Jose,8/6/2013
