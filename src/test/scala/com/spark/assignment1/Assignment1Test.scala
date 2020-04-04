@@ -166,13 +166,13 @@ class Assignment1Test extends AnyFunSuite with Matchers with BeforeAndAfterEach 
    * Count all the trips starting at 'Harry Bridges Plaza (Ferry Building)'
    */
   test("Count of all trips starting at 'Harry Bridges Plaza (Ferry Building)'") {
-    Assignment1.dfProblem12(tripDataDF) must equal (1)
+    Assignment1.dfProblem12(tripDataDF).count() must equal (17255)
   }
 
   /**
    * Sum the duration of all trips
    */
   test("Sum the duration of all trips") {
-    Assignment1.dfProblem13(tripDataDF) must equal (1)
+    Assignment1.dfProblem13(tripDataDF) must equal (370454559)
   }
 }
