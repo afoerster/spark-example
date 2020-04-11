@@ -122,7 +122,7 @@ class Assignment1Test extends AnyFunSuite with Matchers with BeforeAndAfterEach 
 
   /**
    * Ope! The docks were miscalibrated and only counted half of a trip duration. Double the duration of each trip so
-   * we can have an accurate measurement.
+   * we can have an accurate measurement. Provide the sum of all trip durations after they are doubled.
    */
   test("Double the duration of each trip") {
     Assignment1.problem8(tripDataRdd) must equal (7.40909118E8)
