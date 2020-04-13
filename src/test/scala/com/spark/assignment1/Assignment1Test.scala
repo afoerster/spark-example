@@ -72,7 +72,7 @@ class Assignment1Test extends AnyFunSuite with Matchers with BeforeAndAfterEach 
 
   /**
    * We have to prove to the governor that our ride service is being used.
-   * Find the total ride duration across all trips.
+   * Find the longest ride duration.
    */
   test("Find the longest trip (duration)") {
     Assignment1.problem1(tripDataRdd) must equal(17270400)
