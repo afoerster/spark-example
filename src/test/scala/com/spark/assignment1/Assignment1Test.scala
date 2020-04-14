@@ -129,9 +129,9 @@ class Assignment1Test extends AnyFunSuite with Matchers with BeforeAndAfterEach 
   }
 
   /**
-   * Find the coordinates (latitude and longitude) of the trip with the id 913401.
+   * Find the starting coordinates (latitude and longitude) of the trip with the id 913401.
    */
-  test("Coordinates of trip id 913401") {
+  test("Starting coordinates of trip id 913401") {
     Assignment1.problem9(tripDataRdd, stationDataRdd) must equal ((37.781039,-122.411748))
   }
 
