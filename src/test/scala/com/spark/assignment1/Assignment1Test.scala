@@ -79,9 +79,9 @@ class Assignment1Test extends AnyFunSuite with Matchers with BeforeAndAfterEach 
   }
 
   /**
-   * Find all trips starting at the 'San Antonio Shopping Center' station.
+   * How many trips start at the 'San Antonio Shopping Center' station?
    */
-  test("All trips starting at the 'San Antonio Shopping Center' station") {
+  test("Count the trips starting at the 'San Antonio Shopping Center' station") {
     Assignment1.problem2(tripDataRdd) must equal(1069)
   }
 
