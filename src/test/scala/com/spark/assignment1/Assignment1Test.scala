@@ -100,7 +100,7 @@ class Assignment1Test extends AnyFunSuite with Matchers with BeforeAndAfterEach 
   }
 
   /**
-   * Some people keep their bikes for a long time. How many people keep their bikes overnight?
+   * Some people keep their bikes for a long time. How many trips last overnight?
    */
   test("Trips that went overnight") {
     Assignment1.problem5(tripDataRdd) must equal(920)
