@@ -114,9 +114,9 @@ class Assignment1Test extends AnyFunSuite with Matchers with BeforeAndAfterEach 
   }
 
   /**
-   * What percentage of people keep their bikes overnight at least on night?
+   * What's the ratio of trips that last overnight?
    */
-  test("Get the percentage of trips that went overnight") {
+  test("Get the ratio of trips that went overnight") {
     Assignment1.problem7(tripDataRdd) must be(0.0025 +- .0003)
   }
 
