@@ -163,9 +163,9 @@ class Assignment1Test extends AnyFunSuite with Matchers with BeforeAndAfterEach 
   }
 
   /**
-   * Count all the trips starting at 'Harry Bridges Plaza (Ferry Building)'
+   * Get all the trips starting at 'Harry Bridges Plaza (Ferry Building)'
    */
-  test("Count of all trips starting at 'Harry Bridges Plaza (Ferry Building)'") {
+  test("Get all the trips starting at 'Harry Bridges Plaza (Ferry Building)'") {
     Assignment1.dfProblem12(tripDataDF).count() must equal (17255)
   }
 
